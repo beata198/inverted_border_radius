@@ -1,0 +1,96 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  margin: 10px;
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border: 0.4rem solid #1a4d46;
+  border-radius: 0.75em;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  color: #1a4d46;
+  padding: 15px 20px;
+  border-top: 0.4rem solid #1a4d46;
+  border-radius: 0.75em 0 0 0;
+  border-left: 0.4rem solid #1a4d46;
+  font-size: 2em;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  top: -0.4em;
+  right: 0rem;
+  border-bottom-right-radius: 0.4rem;
+  box-shadow: 0.2rem 0.2rem #fff;
+}
+
+.text::before {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  top: -1.2rem;
+  right: 0.4rem;
+  /* background-color: red; */
+  border-bottom-right-radius: 0.4rem;
+  box-shadow: 0.4rem 0.4rem #1a4d46;
+}
+
+.curve::after {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  bottom: 0;
+  left: -0.8rem;
+  border-bottom-right-radius: 0.4rem;
+  box-shadow: 0.2rem 0.2rem #fff;
+}
+
+.curve::before {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  bottom: 0.4rem;
+  left: -1.2rem;
+  border-bottom-right-radius: 0.4rem;
+  box-shadow: 0.2rem 0.2rem #1a4d46;
+}
+
+.copy {
+  margin-top: 100px;
+  padding: 50px;
+  width: 600px;
+  font-size: 0.9em;
+}
