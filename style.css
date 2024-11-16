@@ -9,8 +9,14 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
 .card {
-  margin: 10px;
   position: relative;
   width: 600px;
   height: 400px;
@@ -88,9 +94,84 @@ body {
   box-shadow: 0.2rem 0.2rem #1a4d46;
 }
 
-.copy {
-  margin-top: 100px;
-  padding: 50px;
+.card-2 {
+  position: relative;
   width: 600px;
+  color: #fff;
+}
+
+.box-1 {
+  width: 100%;
+  height: 400px;
+}
+
+.box-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.box-2 {
+  position: relative;
+  padding: 20px 0 0 20px;
+  top: -80px;
+  width: 50%;
+  height: 81px;
+  background-color: black;
+  border-radius: 1rem 1rem 0 0;
+  font-size: 2em;
+  font-weight: 700;
+  box-shadow: 0 1rem 0 black, 0 0 0 1rem #fff;
+}
+
+.box-2::before {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: -0.1rem 0.8rem #fff;
+  top: -3rem;
+  left: 0;
+}
+
+.box-2::after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2rem;
+  /* background-color: red; */
+  border-bottom-left-radius: 1rem;
+  box-shadow: 0 1rem #fff;
+  bottom: 0.07rem;
+  right: -2rem;
+}
+
+.list::after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: 0 1rem black;
+  top: -2rem;
+  left: 50%;
+}
+
+.list {
+  position: relative;
+  top: -65px;
+  width: 100%;
+  height: 250px;
+  padding: 20px 20px 20px 40px;
+  background-color: black;
+  border-radius: 0 1rem 1rem 1rem;
+  z-index: 1;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
   font-size: 0.9em;
 }
